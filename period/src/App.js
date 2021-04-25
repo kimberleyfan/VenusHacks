@@ -13,13 +13,15 @@ import {
   Flex,
   Textarea,
 } from "@chakra-ui/react";
+import ArticleCard from './components/ArticleCard'
 
 import MapPage from "./pages/MapPage.js";
+import ResourcesPage from "./pages/ResourcesPage"
 function App() {
   return (
     <ChakraProvider>
       <div className="App">
-        <MapPage />
+        <ResourcesPage />
       </div>
     </ChakraProvider>
   );
