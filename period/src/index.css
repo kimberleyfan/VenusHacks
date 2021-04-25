@@ -9,7 +9,7 @@ body {
   margin-left: 0;
   margin-bottom: 0;
   margin-right: 10px;
-  font:
+  font: arial;
 }
 
 .title {
@@ -17,6 +17,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   width: 1050px;
+  padding-bottom: 20px;
 }
 
 .titleText {
@@ -26,21 +27,36 @@ body {
   color: red;
 }
 
+img {
+  height: 400px;
+  width: 500px;
+}
+
+.image1 {
+  padding-left: 240px;
+}
+
 .about {
   padding-left: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 1050px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 1050px;
+  
 }
 
 .aboutText {
-  width: 500px;
-  border-right: 1px solid red;
+  width: 480px;
+  padding-right: 20px;
+  align-content: center;
+}
+
+.image2 {
+  border-left: 2px solid red;
 }
 
 .divider {
-  border-left: 1px solid red;
+  border-left: 2px solid red;
 }
 
 .box {
@@ -65,7 +81,7 @@ body {
   color: red;
   background-color: white;
   flex: 1 1 20em;
-  border-top: 1px solid red;
+  border-top: 2px solid red;
   margin-top: -1px;
   margin-left: -1px;
   width: 1050px;
@@ -73,13 +89,14 @@ body {
 
 .more {
   color: red;
-  flex: 1 1 20em;
-  border-top: 1px solid red;
+  border-top: 2px solid red;
   margin-top: -1px;
   margin-left: -1px;
   margin-right: 50px;
   padding-left: 200px;
-  width: 1050px;
+  padding-right: 80px;
+  width: 970px;
+  padding-bottom: 20px;
 }
 
 .formTitle {
@@ -90,12 +107,13 @@ body {
   color: red;
   background-color: white;
   flex: 1 1 20em;
-  border-top: 1px solid red;
+  border-top: 2px solid red;
   margin-top: -1px;
   margin-left: -1px;
   padding-bottom: 20px;
   width: 1050px;
   padding-left: 200px;
+  border-bottom: 2px solid red;
 }
 
 .first {
