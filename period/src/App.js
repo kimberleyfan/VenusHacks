@@ -4,25 +4,35 @@ import logo from "./logo.svg";
 import "./App.css";
 import * as React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-import {
-  Box,
-  Icon as ChakraIcon,
-  HStack,
-  Button,
-  Image,
-  Flex,
-  Textarea,
-} from "@chakra-ui/react";
-import ArticleCard from './components/ArticleCard'
 
+import HomePage from "./pages/HomePage.js";
 import MapPage from "./pages/MapPage.js";
-import ResourcesPage from "./pages/ResourcesPage"
+import ResourcesPage from "./pages/ResourcesPage";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+
 function App() {
   return (
     <ChakraProvider>
-      <div className="App">
-        <ResourcesPage />
-      </div>
+      <Router>
+        <Switch>
+          <Route path="/about">
+            <HomePage />
+          </Route>
+          <Route path="/resources">
+            <ResourcesPage />
+          </Route>
+          <Route path="/">
+            <MapPage />
+
+            {/* <Redirect to="/home" /> */}
+          </Route>
+        </Switch>
+      </Router>
     </ChakraProvider>
   );
 }

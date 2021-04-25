@@ -2,7 +2,7 @@ import React from "react";
 import {
   Box,
   Icon as ChakraIcon,
-  HStack,
+  VStack,
   Button,
   Image,
   Text,
@@ -17,8 +17,14 @@ import PeopleCard from "./PeopleCard";
 const Map = () => (
   <Box backgroundColor="red.100">
     <Center backgroundColor="red.100">
-      <Box boxShadow="lg" w={1000}>
-        <div id="map"></div>
+      <AspectRatio w={1300} ratio={16 / 9}>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d3.375295414770757!3d6.5276316452784755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1567723392506!5m2!1sen!2sng"
+          alt="demo"
+          id="map"
+        />
+      </AspectRatio>
+      <Box>
         <Image
           pos="absolute"
           w={20}
@@ -67,21 +73,16 @@ const Map = () => (
           left="400"
           src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-512.png"
         />
-
-        <AspectRatio ratio={16 / 9}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d3.375295414770757!3d6.5276316452784755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1567723392506!5m2!1sen!2sng"
-            alt="demo"
-            id="map"
-          />
-        </AspectRatio>
       </Box>
     </Center>
-
-    <PeopleCard />
-    <Text color="red" fontSize="3xl" pb={10}>
-      All women above have been confirmed as real and want to help out!
-    </Text>
+    <Center>
+      <VStack>
+        <PeopleCard />
+        <Text color="red" fontSize="3xl" pb={10}>
+          All women above have been confirmed as real and want to help out!
+        </Text>
+      </VStack>
+    </Center>
   </Box>
 );
 
