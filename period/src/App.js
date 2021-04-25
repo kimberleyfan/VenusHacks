@@ -1,6 +1,5 @@
-import home from './pages/home.html'
-import index from './index.css'
-import "@fontsource/be-vietnam"
+import index from "./index.css";
+// import "@fontsource/be-vietnam";
 import logo from "./logo.svg";
 import "./App.css";
 import * as React from "react";
