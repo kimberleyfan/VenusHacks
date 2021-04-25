@@ -12,9 +12,12 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import Map from "../components/Map";
+import NavBar from "../components/NavBar.js";
 
 const MapPage = () => (
   <Box color="red.400">
+    <NavBar />
+
     <Text
       align="left"
       fontWeight="bold"

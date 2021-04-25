@@ -1,8 +1,10 @@
 import React from "react";
 import "../pages/HomePage.css";
+import NavBar from "../components/NavBar.js";
 
 const HomePage = () => (
-  <body>
+  <div>
+    <NavBar />
     <div class="box">
       <div class="title">
         <div class="titleText">
@@ -98,7 +100,7 @@ const HomePage = () => (
 
       <div class="end"></div>
     </div>
-  </body>
+  </div>
 );
 
 export default HomePage;
