@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import {
   Card, Button
 } from 'react-bootstrap';
-import logo from '../logo.svg'
+import pic from './Icons/PeriodPodcast.jpeg'
 
-class ArticleCard extends Component{
+class ArticleCard2 extends Component{
   render(){
     const boxStyle = {
       width: '500px',
@@ -42,12 +42,12 @@ class ArticleCard extends Component{
 
     return (
       <Card style={boxStyle}>
-        <Card.Img variant="top" src="https://source.unsplash.com/user/erondu/600x400" />
+        <Card.Img variant="top" src='https://images.squarespace-cdn.com/content/v1/5b7d89053917ee10a55d8211/1572972897874-YQM0R7RTL31L60WRDQRI/ke17ZwdGBToddI8pDm48kFWxnDtCdRm2WA9rXcwtIYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTSrQkGwCGRqSxozz07hWZrYGYYH8sg4qn8Lpf9k1pYMHPsat2_S1jaQY3SwdyaXg/S2_EP20.jpg?format=1500w' />
         <Card.Body>
           <Card.Text style={typeText}>
             Podcast
           </Card.Text>
-          <Card.Title style={title} >Card Title</Card.Title>
+          <Card.Title style={title} >Real Talk on Periods, Tune into the Podcast!</Card.Title>
           <Card.Text style={dateText}>
             April 24, 2021
           </Card.Text>
@@ -59,4 +59,4 @@ class ArticleCard extends Component{
   }
 }
 
-export default ArticleCard;
+export default ArticleCard2;

@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import {
   Card, Button
 } from 'react-bootstrap';
-import logo from '../logo.svg'
+import pic from './Icons/WhySchoolsNeedEdu.jpeg'
 
-class ArticleCard extends Component{
+class ArticleCard1 extends Component{
   render(){
     const boxStyle = {
       width: '500px',
@@ -42,12 +42,12 @@ class ArticleCard extends Component{
 
     return (
       <Card style={boxStyle}>
-        <Card.Img variant="top" src="https://source.unsplash.com/user/erondu/600x400" />
+        <Card.Img variant="top" src='https://cdn.shopify.com/s/files/1/1201/6082/articles/FirstPeriod_1024x1024.jpg?v=1522086025' />
         <Card.Body>
           <Card.Text style={typeText}>
-            Podcast
+            Article
           </Card.Text>
-          <Card.Title style={title} >Card Title</Card.Title>
+          <Card.Title style={title} >Why It's Important to Teach Feminine Health in High School</Card.Title>
           <Card.Text style={dateText}>
             April 24, 2021
           </Card.Text>
@@ -59,4 +59,4 @@ class ArticleCard extends Component{
   }
 }
 
-export default ArticleCard;
+export default ArticleCard1;

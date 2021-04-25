@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import {
   Card, Button
 } from 'react-bootstrap';
-import logo from '../logo.svg'
 
-class ArticleCard extends Component{
+class ArticleCard3 extends Component{
   render(){
     const boxStyle = {
       width: '500px',
@@ -42,12 +41,12 @@ class ArticleCard extends Component{
 
     return (
       <Card style={boxStyle}>
-        <Card.Img variant="top" src="https://source.unsplash.com/user/erondu/600x400" />
+        <Card.Img variant="top" src='https://miro.medium.com/max/7626/1*b9J08PLEm4g9E71bkWt87g.jpeg' />
         <Card.Body>
           <Card.Text style={typeText}>
-            Podcast
+            Video
           </Card.Text>
-          <Card.Title style={title} >Card Title</Card.Title>
+          <Card.Title style={title} >Girl Talk: First Period (EP 1)</Card.Title>
           <Card.Text style={dateText}>
             April 24, 2021
           </Card.Text>
@@ -59,4 +58,4 @@ class ArticleCard extends Component{
   }
 }
 
-export default ArticleCard;
+export default ArticleCard3;
