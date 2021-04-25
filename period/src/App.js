@@ -18,21 +18,8 @@ import {
 function App() {
   return (
     <ChakraProvider>
-      <Router>
-        <Switch>
-          <Route path="/about">
-            <HomePage />
-          </Route>
-          <Route path="/resources">
-            <ResourcesPage />
-          </Route>
-          <Route path="/">
-            <MapPage />
-
-            {/* <Redirect to="/home" /> */}
-          </Route>
-        </Switch>
-      </Router>
+      <ResourcesPage />
+      
     </ChakraProvider>
   );
 }
