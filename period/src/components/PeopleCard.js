@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Box,
+  useToast,
   Icon as ChakraIcon,
   HStack,
   Button,
@@ -9,69 +10,258 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
-const PeopleCard = () => (
-  <Box boxShadow="lg" w={400} m={1} backgroundColor="white" mb={10}>
-    <Box boxShadow="md" p={5}>
+const styling = (toast) => {
+  toast({
+    title: "Done!",
+    description: "Request sent.",
+    status: "success",
+    duration: 9000,
+    isClosable: true,
+  });
+};
+const PeopleCard = () => {
+  const toast = useToast();
+  return (
+    <Box display="flexWrap" boxShadow="lg" m={1} my={10} mx={90}>
       <HStack>
-        <Image
-          borderRadius="full"
-          boxSize={75}
-          src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
-        ></Image>
-        <Text>
-          Hi! I’m Emily. I love makeup and hair! Feel free to reach out to me
-          for tampons or pads!
-        </Text>
+        <Box boxShadow="md" p={5} w={400} backgroundColor="white">
+          <HStack>
+            <Image
+              borderRadius="full"
+              boxSize={75}
+              src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
+            ></Image>
+            <Text>
+              Hi! I’m Emily. I love makeup and hair! Feel free to reach out to
+              me for tampons or pads!
+            </Text>
+          </HStack>
+          <Text>
+            <b>Has:</b> Pads, Tampons
+          </Text>
+          <Text>
+            <b>Feet Away:</b> 100 feet{" "}
+          </Text>
+          <Button
+            variant="outline"
+            colorScheme="red"
+            onClick={() => styling(toast)}
+          >
+            Request
+          </Button>
+          <Button variant="outline" colorScheme="red" ml="9">
+            Contact
+          </Button>
+        </Box>
+        <Box boxShadow="md" p={5} w={400} backgroundColor="white">
+          <HStack>
+            <Image
+              borderRadius="full"
+              boxSize={75}
+              src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
+            ></Image>
+            <Text>
+              Hi! I’m Emily. I love makeup and hair! Feel free to reach out to
+              me for tampons or pads!
+            </Text>
+          </HStack>
+          <Text>
+            <b>Has:</b> Pads, Tampons
+          </Text>
+          <Text>
+            <b>Feet Away:</b> 100 feet{" "}
+          </Text>
+          <Button
+            variant="outline"
+            colorScheme="red"
+            onClick={() => styling(toast)}
+          >
+            Request
+          </Button>
+          <Button variant="outline" colorScheme="red" ml="9">
+            Contact
+          </Button>
+        </Box>
+        <Box boxShadow="md" p={5} w={400} backgroundColor="white">
+          <HStack>
+            <Image
+              borderRadius="full"
+              boxSize={75}
+              src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
+            ></Image>
+            <Text>
+              Hi! I’m Emily. I love makeup and hair! Feel free to reach out to
+              me for tampons or pads!
+            </Text>
+          </HStack>
+          <Text>
+            <b>Has:</b> Pads, Tampons
+          </Text>
+          <Text>
+            <b>Feet Away:</b> 100 feet{" "}
+          </Text>
+          <Button
+            variant="outline"
+            colorScheme="red"
+            onClick={() => styling(toast)}
+          >
+            Request
+          </Button>
+          <Button variant="outline" colorScheme="red" ml="9">
+            Contact
+          </Button>
+        </Box>
+        <Box boxShadow="md" p={5} w={400} backgroundColor="white">
+          <HStack>
+            <Image
+              borderRadius="full"
+              boxSize={75}
+              src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
+            ></Image>
+            <Text>
+              Hi! I’m Emily. I love makeup and hair! Feel free to reach out to
+              me for tampons or pads!
+            </Text>
+          </HStack>
+          <Text>
+            <b>Has:</b> Pads, Tampons
+          </Text>
+          <Text>
+            <b>Feet Away:</b> 100 feet{" "}
+          </Text>
+          <Button
+            variant="outline"
+            colorScheme="red"
+            onClick={() => styling(toast)}
+          >
+            Request
+          </Button>
+          <Button variant="outline" colorScheme="red" ml="9">
+            Contact
+          </Button>
+        </Box>
       </HStack>
-      <Text>Has: Pads, Tampons</Text>
-      <Text>Feet Away: 100 feet </Text>
-    </Box>
-    <Box boxShadow="md" p={5}>
-      <HStack>
-        <Image
-          borderRadius="full"
-          boxSize={75}
-          src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
-        ></Image>
-        <Text>
-          Hi! I’m Emily. I love makeup and hair! Feel free to reach out to me
-          for tampons or pads!
-        </Text>
+
+      <HStack mt={2}>
+        <Box boxShadow="md" p={5} w={400} backgroundColor="white">
+          <HStack>
+            <Image
+              borderRadius="full"
+              boxSize={75}
+              src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
+            ></Image>
+            <Text>
+              Hi! I’m Emily. I love makeup and hair! Feel free to reach out to
+              me for tampons or pads!
+            </Text>
+          </HStack>
+          <Text>
+            <b>Has:</b> Pads, Tampons
+          </Text>
+          <Text>
+            <b>Feet Away:</b> 100 feet{" "}
+          </Text>
+          <Button
+            variant="outline"
+            colorScheme="red"
+            onClick={() => styling(toast)}
+          >
+            Request
+          </Button>
+          <Button variant="outline" colorScheme="red" ml="9">
+            Contact
+          </Button>
+        </Box>
+        <Box boxShadow="md" p={5} w={400} backgroundColor="white">
+          <HStack>
+            <Image
+              borderRadius="full"
+              boxSize={75}
+              src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
+            ></Image>
+            <Text>
+              Hi! I’m Emily. I love makeup and hair! Feel free to reach out to
+              me for tampons or pads!
+            </Text>
+          </HStack>
+          <Text>
+            <b>Has:</b> Pads, Tampons
+          </Text>
+          <Text>
+            <b>Feet Away:</b> 100 feet{" "}
+          </Text>
+          <Button
+            variant="outline"
+            colorScheme="red"
+            onClick={() => styling(toast)}
+          >
+            Request
+          </Button>
+          <Button variant="outline" colorScheme="red" ml="9">
+            Contact
+          </Button>
+        </Box>
+        <Box boxShadow="md" p={5} w={400} backgroundColor="white">
+          <HStack>
+            <Image
+              borderRadius="full"
+              boxSize={75}
+              src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
+            ></Image>
+            <Text>
+              Hi! I’m Emily. I love makeup and hair! Feel free to reach out to
+              me for tampons or pads!
+            </Text>
+          </HStack>
+          <Text>
+            <b>Has:</b> Pads, Tampons
+          </Text>
+          <Text>
+            <b>Feet Away:</b> 100 feet{" "}
+          </Text>
+          <Button
+            variant="outline"
+            colorScheme="red"
+            onClick={() => styling(toast)}
+          >
+            Request
+          </Button>
+          <Button variant="outline" colorScheme="red" ml="9">
+            Contact
+          </Button>
+        </Box>
+        <Box boxShadow="md" p={5} w={400} backgroundColor="white">
+          <HStack>
+            <Image
+              borderRadius="full"
+              boxSize={75}
+              src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
+            ></Image>
+            <Text>
+              Hi! I’m Emily. I love makeup and hair! Feel free to reach out to
+              me for tampons or pads!
+            </Text>
+          </HStack>
+          <Text>
+            <b>Has:</b> Pads, Tampons
+          </Text>
+          <Text>
+            <b>Feet Away:</b> 100 feet{" "}
+          </Text>
+          <Button
+            variant="outline"
+            colorScheme="red"
+            onClick={() => styling(toast)}
+          >
+            Request
+          </Button>
+          <Button variant="outline" colorScheme="red" ml="9">
+            Contact
+          </Button>
+        </Box>
       </HStack>
-      <Text>Has: Pads, Tampons</Text>
-      <Text>Feet Away: 100 feet </Text>
     </Box>
-    <Box boxShadow="md" p={5}>
-      <HStack>
-        <Image
-          borderRadius="full"
-          boxSize={75}
-          src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
-        ></Image>
-        <Text>
-          Hi! I’m Emily. I love makeup and hair! Feel free to reach out to me
-          for tampons or pads!
-        </Text>
-      </HStack>
-      <Text>Has: Pads, Tampons</Text>
-      <Text>Feet Away: 100 feet </Text>
-    </Box>
-    <Box boxShadow="md" p={5}>
-      <HStack>
-        <Image
-          borderRadius="full"
-          boxSize={75}
-          src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2020/02/IG-annvmariv-1024x1016.jpg"
-        ></Image>
-        <Text>
-          Hi! I’m Emily. I love makeup and hair! Feel free to reach out to me
-          for tampons or pads!
-        </Text>
-      </HStack>
-      <Text>Has: Pads, Tampons</Text>
-      <Text>Feet Away: 100 feet </Text>
-    </Box>
-  </Box>
-);
+  );
+};
 
 export default PeopleCard;
